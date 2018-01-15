@@ -1,95 +1,67 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+ <html>
+      <head>
+          <meta charset="UTF-8">
+          <title>Cadastro Visitante</title>
+      </head>
+<style>
+  body.center-form {
+    min-height: 100vh;
+  }
 
-        <title>Laravel</title>
+  div.center-form {
+    position: relative;
+    min-height: 100vh;
+  }
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
+  div.center-form > form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+</style>
+<body>
+<form action="formulario.php" method="POST" >
+<!--botôes-->
+<label class="center-form">Nome</label>  
+<div class="controls">
+                    <input type="text" id="idNome" name="nome" class="input-xlarge " size="20" maxlength="20" required>
+					</div>
+<div class="control-group">
+<label class="control-label ">E-mail</label>
+<div class="controls">
+                    <input type="text" id="idEmail" name="email" class="input-xlarge" size="15" maxlength="15" required>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+				<label class="control-label ">Celular</label>
+				<div class="controls">
+                    <input type="text" id="idcelular" name="celular" class="input-xlarge" size="15" maxlength="15" required>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">ok</a>
-                    <a href="https://github.com/laravel/laravel">Teste 1 pra ver</a>
+<label class="control-label ">Data de Nascimento</label>
+<div class="controls">
+                    <input type="text" id="idData" name="data" class="input-xlarge" size="15" maxlength="15" required>
                 </div>
-            </div>
-        </div>
-    </body>
-</html>
+<label class="control-label ">Cep</label>
+<div class="controls">
+                    <input type="text" id="idcep" name="cep" class="input-xlarge" size="15" maxlength="15" required>
+                </div>
+<label class="control-label ">Rua</label>
+<div class="controls">
+                    <input type="text" id="idrua" name="rua" class="input-xlarge" size="15" maxlength="15" required>
+                </div>
+<label class="control-label ">Bairro</label>
+<div class="controls">
+                    <input type="text" id="idbairro" name="bairro" class="input-xlarge" size="15" maxlength="15" required>
+                </div>
+<label class="control-label ">Cidade</label>
+<div class="controls">
+                    <input type="text" id="idcidade" name="cidade" class="input-xlarge" size="15" maxlength="15" required>
+                </div>
+<label class="control-label ">Estado</label>
+<div class="controls">
+                    <input type="text" id="idestado" name="estado" class="input-xlarge" size="15" maxlength="15" required>
+                </div>
+<input type="submit" value="Enviar" class="btn btn-success">
+</form> 
+</body>
+  </html>
