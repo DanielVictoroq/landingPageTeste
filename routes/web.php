@@ -10,7 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'visitanteController@index');
 
-Route::get('/', function () {
+Route::get('visitante/create', function ()
+{
     return view('welcome');
 });
+Route::post('visitante/create' , [
+	'uses' => 'Visitantecontroller@adicionarVisitante',
+	'as' => 'visitante/create'
+]);

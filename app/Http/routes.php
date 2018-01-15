@@ -20,7 +20,3 @@ Route::post('visitante/create' , [
 	'uses' => 'Visitantecontroller@adicionarVisitante',
 	'as' => 'visitante/create'
 ]);
-Route::get('/', function () 
-{
-    return view('welcome');
-});
