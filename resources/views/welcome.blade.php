@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
  <html>
       <head>
           <meta charset="UTF-8">
@@ -22,16 +23,16 @@
   }
 </style>
 <body>
-<form action="formulario.php" method="POST" >
+<form class "center-form" action='{{route('visitante/create')}}' method="POST" >
 <!--botôes-->
 <label class="center-form">Nome</label>  
 <div class="controls">
-                    <input type="text" id="idNome" name="nome" class="input-xlarge " size="20" maxlength="20" required>
+                    <input type="text" id="idNome" name="nome" class="input-xlarge " size="50" maxlength="50" required>
 					</div>
 <div class="control-group">
 <label class="control-label ">E-mail</label>
 <div class="controls">
-                    <input type="text" id="idEmail" name="email" class="input-xlarge" size="15" maxlength="15" required>
+                    <input type="text" id="idEmail" name="email" class="input-xlarge" size="50" maxlength="50" required>
                 </div>
 				<label class="control-label ">Celular</label>
 				<div class="controls">
