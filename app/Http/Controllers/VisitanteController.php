@@ -1,14 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use Illuminate\Http\Request;
 
 class VisitanteController extends Controller
 {
      public function index()
       {
-          return view('welcome');
+          return view('visitante');
 	  }
      protected function adicionarVisitante()
     {

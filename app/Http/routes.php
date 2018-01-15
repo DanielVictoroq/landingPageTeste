@@ -12,11 +12,15 @@
 */
 Route::get('/', 'visitanteController@index');
 
+Route::get('visitante/create', function () 
+{
+    return view('welcome');
+});
 Route::post('visitante/create' , [
 	'uses' => 'Visitantecontroller@adicionarVisitante',
 	'as' => 'visitante/create'
 ]);
 Route::get('/', function () 
 {
-    return view('index');
+    return view('welcome');
 });

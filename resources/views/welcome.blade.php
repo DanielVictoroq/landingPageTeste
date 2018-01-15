@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
  <html>
       <head>
           <meta charset="UTF-8">
@@ -23,24 +22,28 @@
   }
 </style>
 <body>
-<form class "center-form" action='{{route('visitante/create')}}' method="POST" >
-<!--botôes-->
+
+<form class "center-form" action='{{url('visitante/create')}}' method="POST" >
+ <fieldset>
+             <header class="legend">
+                <legend class="">Cadastrar Visitante</legend>
+            </header>
 <label class="center-form">Nome</label>  
 <div class="controls">
-                    <input type="text" id="idNome" name="nome" class="input-xlarge " size="50" maxlength="50" required>
+                    <input type="text" id="idNome" name="nome" placeholder="Nome Completo" class="input-xlarge " size="50" maxlength="50" required>
 					</div>
 <div class="control-group">
 <label class="control-label ">E-mail</label>
 <div class="controls">
-                    <input type="text" id="idEmail" name="email" class="input-xlarge" size="50" maxlength="50" required>
+                    <input type="text" id="idEmail" name="email" placeholder="email@example.com" class="input-xlarge" size="50" maxlength="50" required>
                 </div>
 				<label class="control-label ">Celular</label>
 				<div class="controls">
-                    <input type="text" id="idcelular" name="celular" class="input-xlarge" size="15" maxlength="15" required>
+                    <input type="text" id="idcelular" name="celular" placeholder="(ddd)" class="input-xlarge" size="15" maxlength="15" required>
                 </div>
 <label class="control-label ">Data de Nascimento</label>
 <div class="controls">
-                    <input type="text" id="idData" name="data" class="input-xlarge" size="15" maxlength="15" required>
+                    <input type="date" id="idData" name="data" class="input-xlarge" size="15" maxlength="15" required>
                 </div>
 <label class="control-label ">Cep</label>
 <div class="controls">
@@ -63,6 +66,7 @@
                     <input type="text" id="idestado" name="estado" class="input-xlarge" size="15" maxlength="15" required>
                 </div>
 <input type="submit" value="Enviar" class="btn btn-success">
+ </fieldset>
 </form> 
 </body>
   </html>
