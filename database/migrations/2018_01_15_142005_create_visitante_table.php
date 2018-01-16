@@ -23,6 +23,7 @@ class CreateVisitanteTable extends Migration
 			$table->string('rua')->nullable();
             $table->string('bairro')->nullable();
             $table->string('cidade')->nullable();
+            $table->string('estado')->nullable();
             $table->timestamps();
         });
     }
