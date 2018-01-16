@@ -14,15 +14,15 @@
 <h1>Cadastro de Visitante</h1>
 {!! Form::open(['route'=>'visitante/create', 'method'=>'post'])!!}
 
-@include('input',['label'=>'Nome','input'=>'nome', 'attributes' => ['placeholder'=> 'Nome Completo'] ])
-@include('input',['label'=>'E-mail','input'=>'email', 'attributes' => ['placeholder'=> 'example@example.com'] ])
-@include('input',['label'=>'Telefone','input'=>'celular', 'attributes' => ['placeholder'=> ''] ])
-@include('date',['label'=>'Data de Nascimento','input'=>'datadenascimento', 'attributes' => ['placeholder'=> ''] ])
-@include('input',['label'=>'CEP','input'=>'cep', 'attributes' => ['placeholder'=> 'CEP'] ])
-@include('input',['label'=>'Rua','input'=>'rua', 'attributes' => ['placeholder'=> ''] ])
-@include('input',['label'=>'Número','input'=>'numero', 'attributes' => ['placeholder'=> ''] ])
-@include('input',['label'=>'Cidade','input'=>'cidade', 'attributes' => ['placeholder'=> ''] ])
-@include('input',['label'=>'UF','input'=>'Estado', 'attributes' => ['placeholder'=> ''] ])
+@include('input',['input'=>'nome', 'attributes' => ['placeholder'=> 'Nome Completo'] ])
+@include('input',['input'=>'email', 'attributes' => ['placeholder'=> 'example@example.com'] ])
+@include('input',['input'=>'celular', 'attributes' => ['placeholder'=> 'Celular'] ])
+@include('date',['input'=>'datadenascimento', 'attributes' => ['placeholder'=> 'Data de Nascimento'] ])
+@include('input',['input'=>'cep', 'attributes' => ['placeholder'=> 'CEP'] ])
+@include('input',['input'=>'rua', 'attributes' => ['placeholder'=> 'Rua..'] ])
+@include('input',['input'=>'numero', 'attributes' => ['placeholder'=> 'Número'] ])
+@include('input',['input'=>'cidade', 'attributes' => ['placeholder'=> 'Cidade'] ])
+@include('input',['input'=>'Estado', 'attributes' => ['placeholder'=> 'UF'] ])
 
 {!!Form::submit('Enviar')!!}
 

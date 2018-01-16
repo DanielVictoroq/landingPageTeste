@@ -12,20 +12,34 @@ border:none;
 /*section#view-formulario{
 }
 */
+
+body {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../Imagem1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 section#view-formulario{
-width: 400px;
-left: 50%;
-margin: -80px 0 0 -210px;
-padding:0px;
 position: absolute;
-top: 15%;
+right: 100px;
+float: right;
+width: 300px;
+height: 75%;
+top: 10%;
+padding: 25px;
+background: #959595;
+border-radius: 15px;
 }
 section#view-formulario h1{
-  float: left;
+  float: right;
   width: 100%;
   font: 2em  'Oswald', cursive;
-  margin-top: 0px;
-  color: #959595;
+  margin-top: 35px;
+  color:	#000000;
+   /*#959595;*/
 }
 section#view-formulario form p{
   font: 13px  'Arial';
@@ -42,27 +56,21 @@ section#view-formulario form{
     margin-top: 50px;
 }
 section#view-formulario form label input{
-    float: left;
+    float: right;
     width: 100%;
     text-align: left;
-    padding: 5px 3px;
+    padding: 10px 3px ;
     border: 1.35px solid ;
     color: 	#000000;
     border-radius: 5px;
 }
 section#view-formulario form input[type='submit']{
-  float: none;
-  width: 100%;
-  padding: 5px 5px;
+  float: center;
+  width: 50%;
+  padding: 12px 11px;
   background: #1E90FF;
   text-align: center;
-  font: 12px  'Arial';
+  font: 15px  'Arial';
   color: #FFFFFF;
   border-radius: 5px;
-}
-form.formulario label span{
-    float: left;
-    width: 100%;
-    font: 400 .75em 'Arial';
-    padding-bottom: 5px;
 }
