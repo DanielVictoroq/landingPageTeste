@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 
 class VisitanteController extends Controller
 {
@@ -14,7 +15,7 @@ class VisitanteController extends Controller
     {
     	try
         {
-            $visitanteDAO = new visitanteDAO;
+          $visitanteDAO = new visitanteDAO;
         	$visitante = $visitanteDAO->inserir();
             return redirect('/')->with('cadastro', 'Cadastro realizado com sucesso!');
         }
@@ -22,11 +23,11 @@ class VisitanteController extends Controller
         {
             Log::error($e);
         }
-        
+
     }
 	public function inserir()
     {
-    	$data = Input::all();
+      $data = Input::all();
         try
         {
             DB::beginTransaction();
@@ -34,52 +35,54 @@ class VisitanteController extends Controller
             $visitante->save();
             DB::commit();
             return $visitante;
+            return redirect('/')->with('cadastro', 'Cadastro realizado com sucesso!');
         }
         catch(Exception $e)
         {
-            throw new Exception($e->getMessage(), $e->getCode()); 
+            throw new Exception($e->getMessage(), $e->getCode());
         }
     }
 	    public function setData($visitante='')
     {
         if(empty($visitante))
-        $animal = new Animal();    
+        $visitantea = new VisitanteController();
         if(!empty($nome = Input::get('nome')))
         {
-            $visitante->nome = $nome;
+            $visitantea->nome = $nome;
         }
         if(!empty($email = Input::get('email`')))
         {
-            $visitante->raca = $raca;
+            $visitantea->email = $email;
         }
-        if(!empty($datanascimento = Input::get('datadenascimento')))
+        if(!empty($datadenascimento = Input::get('datadenascimento')))
         {
-            $visitante->datadenascimento = $datadenascimento;
+            $visitantea->datadenascimento = $datadenascimento;
         }
         if(!empty($celular = Input::get('celular')))
         {
-            $visitante->celular = $celular;
+            $visitantea->celular = $celular;
         }
         if(!empty($cep = Input::get('cep')))
         {
-            $visitante->cep = $cep;
+            $visitantea->cep = $cep;
         }
 		        if(!empty($rua = Input::get('rua')))
         {
-            $visitante->rua = $rua;
+            $visitantea->rua = $rua;
         }
 		        if(!empty($bairro = Input::get('bairro')))
         {
-            $visitante->bairro = $bairro;
+            $visitantea->bairro = $bairro;
         }
 		        if(!empty($cidade = Input::get('cidade')))
         {
-            $visitante->cidade = $cidadeo;
+            $visitantea->cidade = $cidade;
         }
 		        if(!empty($estado = Input::get('estado')))
         {
-            $visitante->estado = $estado;
+            $visitantea->estado = $estado;
         }
-        return $visitante;
+        return $visitantea;
     }
+
 }

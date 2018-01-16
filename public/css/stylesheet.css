@@ -1,0 +1,29 @@
+*{
+padding:0;
+margin:0;
+list-style:none;
+outline:none;
+border:none;
+
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-box-sizing:border-box;
+}
+section#view-formulario{
+  position: absolute;
+  right: 0;
+  padding: 130px;
+  float: right;
+  width: 500px;
+  height: 100%;
+  background: #51dca6;
+}
+section#view-formulario h1{
+  float: left;
+  width: 100%;
+  font: 2em  'Oswald', cursive;
+  margin-top: 150px;
+}
+/*section#view-formulario{
+}
+*/
