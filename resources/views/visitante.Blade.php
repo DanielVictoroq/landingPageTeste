@@ -13,46 +13,20 @@
 <section id="view-formulario" class="formulario">
 <h1>Cadastro de Visitante</h1>
 {!! Form::open(['route'=>'visitante/create', 'method'=>'post'])!!}
-<p>Nome</p>
-<label>
-{!!Form::text ('nome',null, ['class'=>'input']);!!}
-</label>
-<p>E-mail</p>
-<label>
-{!!Form::text ('email',null, ['class'=>'input', 'placeholder'=>"example@example.com"]);!!}
-</label>
-<p>Celular</p>
-<label>
-{!!Form::text ('celular',null, ['class'=>'input']);!!}
-</label>
-<p>Data de Nascimento</p>
-<label>
-{!!Form::date ('datadenascimento',null, ['class'=>'input']);!!}
-</label>
-<p>Cep</p>
-<label>
-{!!Form::text ('cep',null, ['class'=>'input']);!!}
-</label>
-<p>Rua</p>
-<label>
-{!!Form::text ('rua',null, ['class'=>'input']);!!}
-</label>
-<p>Número</p>
-<label>
-{!!Form::text ('numero',null, ['class'=>'input']);!!}
-</label>
-<p>Bairro</p>
-<label>
-{!!Form::text ('bairro',null, ['class'=>'input']);!!}
-</label>
-<p>Cidade</p>
-<label>
-{!!Form::text ('cidade',null, ['class'=>'input']);!!}
-</label>
-<p>Estado</p>
-<label>
-{!!Form::text ('estado',null, ['class'=>'input']);!!}
-</label>
+
+@include('input',['label'=>'Nome','input'=>'nome', 'attributes' => ['placeholder'=> 'Nome Completo'] ])
+@include('input',['label'=>'E-mail','input'=>'email', 'attributes' => ['placeholder'=> 'example@example.com'] ])
+@include('input',['label'=>'Telefone','input'=>'celular', 'attributes' => ['placeholder'=> ''] ])
+@include('date',['label'=>'Data de Nascimento','input'=>'datadenascimento', 'attributes' => ['placeholder'=> ''] ])
+@include('input',['label'=>'CEP','input'=>'cep', 'attributes' => ['placeholder'=> 'CEP'] ])
+@include('input',['label'=>'Rua','input'=>'rua', 'attributes' => ['placeholder'=> ''] ])
+@include('input',['label'=>'Número','input'=>'numero', 'attributes' => ['placeholder'=> ''] ])
+@include('input',['label'=>'Cidade','input'=>'cidade', 'attributes' => ['placeholder'=> ''] ])
+@include('input',['label'=>'UF','input'=>'Estado', 'attributes' => ['placeholder'=> ''] ])
+
+{!!Form::submit('Enviar')!!}
+{!!Form::close()!!}
+</section>
 <script>
 jQuery(function($){
     correios.init( 'TNAGKTXBjltetcFkw5c482suOfLojTc3', '7duzOc6zV3gSssHm2Z0uhUsLU0j3rUUb97hgVPqcJ1bPRzoN' );
@@ -123,7 +97,7 @@ jQuery(function($){
                     if (c_uf) $( uf ).val( data.uf );
 
                 });
- 
+
            }
 
        });
@@ -133,9 +107,5 @@ jQuery(function($){
    };
 }));
 </script>
-{!!Form::submit('Enviar')!!}
-
-{!!Form::close()!!}
-</section>
 </body>
   </html>
