@@ -123,7 +123,7 @@ jQuery(function($){
                     if (c_uf) $( uf ).val( data.uf );
 
                 });
-
+ 
            }
 
        });
