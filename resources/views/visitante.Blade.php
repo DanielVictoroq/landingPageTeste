@@ -25,6 +25,7 @@
 @include('input',['label'=>'UF','input'=>'Estado', 'attributes' => ['placeholder'=> ''] ])
 
 {!!Form::submit('Enviar')!!}
+
 {!!Form::close()!!}
 </section>
 <script>
