@@ -12,35 +12,79 @@ border:none;
 /*section#view-formulario{
 }
 */
-
+body{
+  background: #F0FFFF;
+  background-size: cover;
+  overflow: hidden;
+}
 div.background{
   position: absolute;
-  left: 0;
+  top: 500px;
+  left: 800px;
   height: 100%;
+  width: 100%;
+  background-image: url('../imagem/imagem6.png');
+  background-repeat: no-repeat;
 }
+p.texto, p.texto-negri{
+  position: absolute;
+  left:150px;
+  top: 250px;
+  width: 600px;
+  height: 100%;
+  padding: 20px;
+  font: 20px  'Righteous';
 
+}
+p.texto-negri{
+  left:760px;
+  top: 450px;
+  overflow-x: hidden;
+}
+div.background2{
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  height: 100%;
+  width: 100%;
+background-image: url('../imagem/fechado2.png');
+background-repeat: no-repeat;}
+div.rodape{
+  position: absolute;
+  top: 90%;
+  right: 45%;
+  height: 100%;
+  padding: 50px 20px;
+  font: 20px  'Righteous'
+}
 h2{
 position: absolute;;
-left: 0px;
-top: 50px;
+left: 40%;
+top: 0px;
 height: 20%;
 width: 100%;
-padding: 70px 20px;
+padding: 30px 60px;
 line-height: 300px;
-font: 23px  'Poppins';
-color: #000000;
-background-image: url('../imagem1.jpg');
-
-
+font: 30px  'Righteous';
+color: 	#000000;
+}
+h4{
+  position: absolute;
+  padding: 20px 60px;
+  top: 50px;
+  left: 39%;
+  font: 20px  'Playball';
 }
 section#view-formulario{
 position: absolute;
-right: 400px;
+right: 300px;
 float: right;
 width: 400px;
-height: 90%;
+top: 80px;
+height: 80%;
 padding: 17px;
 background: #959595;
+border-radius: 30px;
 }
 
 section#view-formulario h1{
@@ -52,13 +96,8 @@ section#view-formulario h1{
   top: 10px;
    /*#959595;*/
 }
-section#view-formulario form p{
-  font: 13px  'Arial';
-  color: #808080;
-  font-weight: bolder;
-}
-section#view-formulario form,
-    section#view-formulario form label{
+
+form, form label{
       float: left;
       width: 100%;
       margin-bottom: 10px;
@@ -66,7 +105,7 @@ section#view-formulario form,
 section#view-formulario form{
     margin-top: 50px;
 }
-section#view-formulario form label input{
+.input{
     float: right;
     width: 100%;
     text-align: left;

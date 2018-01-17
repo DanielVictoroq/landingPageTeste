@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
-include("Visitantee.php");
+use  App\Visitantee;
 class VisitanteController extends Controller
 {
      public function index()
