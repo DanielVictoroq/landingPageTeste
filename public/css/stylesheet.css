@@ -75,7 +75,7 @@ h4{
   left: 39%;
   font: 20px  'Playball';
 }
-section#view-formulario{
+section#viewformulario{
 position: absolute;
 right: 300px;
 float: right;
@@ -87,7 +87,7 @@ background: #959595;
 border-radius: 30px;
 border: 1.5px solid ;
 }
-section#view-formulario h1{
+section#viewformulario h1{
   float: right;
   width: 100%;
   font: 18px  'Oswald', cursive;
@@ -101,11 +101,11 @@ form, form label{
       width: 100%;
       margin-bottom: 50px;
 }
-section#view-formulario form{
+section#viewformulario form{
     margin-top: 70px;
 
 }
-section#view-formulario input{
+section#viewformulario input{
     float: right;
     width: 99%;
     text-align: left;
@@ -115,7 +115,7 @@ section#view-formulario input{
     border-radius: 5px;
     margin: 5px;
 }
-section#view-formulario button {
+section#viewformulario button {
   float: center;
   width: 50%;
   padding: 10px;

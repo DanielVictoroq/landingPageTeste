@@ -6,14 +6,11 @@
           <title>Cadastro Visitante</title>
           <link rel="stylesheet" href="{{asset('css/stylesheet.css')}}">
           <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Poiret+One|Righteous" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+          <link rel="stylesheet" type="text/css" href="/css/form.scss">
           <script src="/js/jquery.correios.min.js"></script>
           <script src="/js/jquery.mask.js"></script>
-          <script src="/js/app.js"></script>
           <script src="/js/principal.js"></script>
       </head>
 <body>
@@ -31,9 +28,8 @@
 <div class="rodape">
 <h3>Consultoria Tec</h3>
 </div>
-<section id="view-formulario" class="formulario">
+<section id="viewformulario" >
 <h1>Favor efetuar seu cadastro conforme campos abaixo:</h1>
-<div class="form-group">
     <form class="form" action="create" method="post">
         <?=csrf_field()?>
      <div class="formulario">
@@ -43,11 +39,10 @@
             </div>
             <div class="form-item email">
                 <input  class="email  "type="email"  name="email" id="email"
-                placeholder="exemplo@gmail.com" onkeyup="valida(this)">
+                 placeholder="exemplo@gmail.com" onkeyup="valida(this)">
             </div>
             <div class="form-item nascimento">
-                <input class="date" type="text"  name="nascimento" id="date"
-                placeholder="Data de Nascimento" onkeyup="valida(this)">
+                <input class="date" type="text"  name="nascimento" id="date" placeholder="Data de Nascimento" onkeyup="valida(this)">
             </div>
             <div class="form-item telefone">
                 <input class="phone_with_ddd" type="text"
@@ -74,9 +69,8 @@
             </div>
         </div>
         <button class="btn" type="submit"><span class="btn-text">ENVIAR</span></button>
+
     </form>
-</div>
 </section>
 </body>
-<script src="/js/principal.js"></script>
   </html>
