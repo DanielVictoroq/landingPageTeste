@@ -1,5 +1,6 @@
 <!DOCTYPE html>
  <html>
+
       <head>
           <meta charset="UTF-8">
           <title>Cadastro Visitante</title>
@@ -10,11 +11,12 @@
           <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Poiret+One|Righteous" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
-
+          <script src="/js/jquery.correios.min.js"></script>
+          <script src="/js/jquery.mask.js"></script>
+          <script src="/js/app.js"></script>
+          <script src="/js/principal.js"></script>
       </head>
 <body>
-<script src="jquery.js"></script>
-<script src="jquery.correios.min.js"></script>
 <h2>Consultoria Tec</h2>
 <h4>O seu sucesso é o nosso sucesso!!</h4>
 <div class="background">
@@ -22,27 +24,25 @@
 <div class="background2">
 </div>
 <p>
-  <p class="texto">Aqui temos o que você mais precisa para se dar bem em seu negócio, damos consultoria em todas as áreas que envolvem tecnologia
-    , com profissionais altamente capacitados e as melhores tecnologias do mercado.</p>
+  <p class="texto">Aqui temos o que você precisa para se dar bem em seu negócio, damos consultoria em todas as áreas que envolvem tecnologia
+    , com profissionais altamente capacitados e 100% atualizado com o que há de novo no mercado tecnológico.</p>
     <p class="texto-negri">Cadastre-se agora mesmo! </p>
 </p>
 <div class="rodape">
 <h3>Consultoria Tec</h3>
 </div>
 <section id="view-formulario" class="formulario">
-
 <h1>Favor efetuar seu cadastro conforme campos abaixo:</h1>
-
 <div class="form-group">
     <form class="form" action="visitante/create" method="post">
         <?=csrf_field()?>
      <div class="formulario">
-            <div class="formulario">
+            <div class="form-item nome">
                 <input  type="text" name="nome" id="nome"
                 placeholder="Nome Completo" onkeyup="valida(this)">
             </div>
-            <div class="formulario">
-                <input  type="email"  name="email" id="email"
+            <div class="form-item email">
+                <input  class="email  "type="email"  name="email" id="email"
                 placeholder="exemplo@gmail.com" onkeyup="valida(this)">
             </div>
             <div class="form-item nascimento">
@@ -78,4 +78,5 @@
 </div>
 </section>
 </body>
+<script src="/js/principal.js"></script>
   </html>
