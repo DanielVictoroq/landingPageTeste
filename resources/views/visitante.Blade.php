@@ -34,7 +34,7 @@
 <section id="view-formulario" class="formulario">
 <h1>Favor efetuar seu cadastro conforme campos abaixo:</h1>
 <div class="form-group">
-    <form class="form" action="visitante/create" method="post">
+    <form class="form" action="create" method="post">
         <?=csrf_field()?>
      <div class="formulario">
             <div class="form-item nome">
