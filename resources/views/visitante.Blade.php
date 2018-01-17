@@ -33,7 +33,7 @@
 
 <h1>Favor efetuar seu cadastro conforme campos abaixo:</h1>
 
-<div class="card">
+<div class="form-group">
     <form class="form" action="visitante/create" method="post">
         <?=csrf_field()?>
      <div class="formulario">
@@ -51,7 +51,7 @@
             </div>
             <div class="form-item telefone">
                 <input class="phone_with_ddd" type="text"
-                placeholder="ex:31912345678" name="telefone" id="telefone">
+                placeholder="Telefone ex:31912345678" name="telefone" id="telefone">
             </div>
             <div class="form-item Cep">
                 <input class="cep"  type="text"
@@ -61,7 +61,7 @@
                 <input  type="text"  name="rua" id="rua"   placeholder="Rua.." readonly>
             </div>
             <div class="form-item numero">
-                <input  type="number"  name="numero" id="numero"    placeholder="número" >
+                <input  type="number"  name="numero" id="numero"    placeholder="Número" >
             </div>
             <div class="form-item bairro">
                 <input  type="text" name="bairro" id="bairro"   placeholder="Bairro" readonly >
@@ -74,10 +74,8 @@
             </div>
         </div>
         <button class="btn" type="submit"><span class="btn-text">ENVIAR</span></button>
-
     </form>
 </div>
-
 </section>
 </body>
   </html>

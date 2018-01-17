@@ -20,7 +20,7 @@ body{
 div.background{
   position: absolute;
   top: 500px;
-  left: 800px;
+  left: 900px;
   height: 100%;
   width: 100%;
   background-image: url('../imagem/imagem6.png');
@@ -85,8 +85,8 @@ height: 80%;
 padding: 17px;
 background: #959595;
 border-radius: 30px;
+border: 1.5px solid ;
 }
-
 section#view-formulario h1{
   float: right;
   width: 100%;
@@ -96,31 +96,33 @@ section#view-formulario h1{
   top: 10px;
    /*#959595;*/
 }
-
 form, form label{
       float: left;
       width: 100%;
-      margin-bottom: 10px;
+      margin-bottom: 50px;
 }
 section#view-formulario form{
-    margin-top: 50px;
+    margin-top: 70px;
+
 }
-.input{
+section#view-formulario input{
     float: right;
-    width: 100%;
+    width: 99%;
     text-align: left;
-    padding: 10px 15px ;
+    padding: 10px 10px ;
     border: 1.35px solid ;
     color: 	#000000;
     border-radius: 5px;
+    margin: 5px;
 }
-section#view-formulario form input[type='submit']{
+section#view-formulario button {
   float: center;
   width: 50%;
-  padding: 12px 11px;
+  padding: 10px;
   background: #1E90FF;
   text-align: center;
   font: 15px  'Arial';
   color: #FFFFFF;
+  margin: 5px;
   border-radius: 5px;
 }
