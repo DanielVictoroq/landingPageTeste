@@ -57,11 +57,7 @@ function valida(campo){
 
         campo.value = campo.value.replace(regex, "");
     }
-
-
 }
-
-
 jQuery(function($){
     correios.init( 'TNAGKTXBjltetcFkw5c482suOfLojTc3', '7duzOc6zV3gSssHm2Z0uhUsLU0j3rUUb97hgVPqcJ1bPRzoN' );
     $('#cep').correios( '#rua', '#bairro', '#cidade', '#estado', '' );
