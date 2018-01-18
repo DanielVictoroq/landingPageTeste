@@ -115,7 +115,7 @@
     div.background{
       position: absolute;
       top: 400px;
-      left: 900px;
+      left: 850px;
       height: 100%;
       width: 100%;
       background-image: url('../imagem/imagem6.png');
@@ -133,8 +133,8 @@
 
     }
     p.texto-negri{
-      left:760px;
-      top: 400px;
+      left:830px;
+      top: 370px;
       overflow-x: hidden;
     }
     div.background2{
