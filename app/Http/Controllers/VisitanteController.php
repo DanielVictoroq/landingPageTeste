@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use DB;
-use Illuminate\Http\Request;
+use Illuminate\Http\VisitanteRequest;
 use Illuminate\Support\Facades\Input;
 use  App\Visitantee;
 class VisitanteController extends Controller
@@ -11,8 +11,7 @@ class VisitanteController extends Controller
       {
           return view('visitante');
 	  }
-
-    public function adicionar(UsuarioRequest $request){
+    public function inserir(UsuarioRequest $request){
         Usuario::create($request->all());
         return redirect()->back()->with('data', ['success']);
     }
