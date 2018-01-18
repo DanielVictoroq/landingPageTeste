@@ -13,11 +13,6 @@
  <header class="mensagem">
         @if (session()->has('data'))
             <h2 class="success-msg">Cadastro Realizado com sucesso</h2>
-            <script>
-                $(document).ready(()=>{
-                    refazLayout();
-                });
-            </script>
         @endif
         <ul>
         @foreach($errors->all() as $error )
@@ -52,7 +47,7 @@
             </div>
             <div class="form-item email">
                 <input  class="email  "type="email"  name="email" id="email"
-                 placeholder="exemplo@gmail.com" onkeyup="valida(this)">
+                 placeholder="exemplo@gmail.com" onkeyup="valida(this)" >
             </div>
             <div class="form-item nascimento">
                 <input class="date" type="text"  name="nascimento" id="date" placeholder="Data de Nascimento" onkeyup="valida(this)">
@@ -75,10 +70,10 @@
                 <input  type="text" name="bairro" id="bairro"   placeholder="Bairro" readonly >
             </div>
             <div class="form-item cidade">
-                <input  type="text"  name="cidade" readonly id="cidade" placeholder="Cidade" >
+                <input  type="text"  name="cidade"  id="cidade" placeholder="Cidade" readonly >
             </div>
             <div class="form-item estado">
-                <input  type="text"  name="estado" readonly id="estado" placeholder="Estado" >
+                <input  type="text"  name="estado"  id="estado" placeholder="Estado" readonly>
             </div>
         </div>
         <button class="btn" type="submit"><span class="btn-text">ENVIAR</span></button>
