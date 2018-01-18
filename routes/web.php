@@ -14,4 +14,7 @@ Route::get('/', function(){
   return view('visitante');
 });
 Route::get('visitante', 'visitanteController@index');
-Route::post('visitante/create', 'visitanteController@inserir');
+Route::post('visitante' , [
+	'uses' => 'visitanteController@inserir',
+	'as' => 'visitante'
+]);

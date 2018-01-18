@@ -38,7 +38,7 @@
 <section id="viewformulario" >
 <h1>Efetue seu cadastro e faça uma parceria conosco</h1>
 <main class="main">
-    <form class="form" action="visitante" method="post">
+    <form class="form" action="{{route('visitante')}}" method="post">
         <?=csrf_field()?>
      <div class="formulario">
             <div class="form-item nome">
