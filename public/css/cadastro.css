@@ -114,7 +114,7 @@
     }
     div.background{
       position: absolute;
-      top: 500px;
+      top: 400px;
       left: 900px;
       height: 100%;
       width: 100%;
@@ -134,13 +134,13 @@
     }
     p.texto-negri{
       left:760px;
-      top: 450px;
+      top: 400px;
       overflow-x: hidden;
     }
     div.background2{
       position: absolute;
       top: 500px;
-      left: 300px;
+      left: 200px;
       height: 100%;
       width: 100%;
     background-image: url('../imagem/fechado2.png');

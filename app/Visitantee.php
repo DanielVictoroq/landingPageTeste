@@ -1,4 +1,5 @@
 <?php
+
 class Visitante{
 	public $nome;
   public $datadenascimento;
@@ -25,11 +26,14 @@ class Visitante{
       $this->cidade = $cidade_;
       $this->estado = $estado_;
 	}
+
   function insereVisitante(){
+		include conexaoBanco;
+
    $SQL = $conn->prepare("INSERT INTO visitante (nome, datadenascimento, email, celular, cep, rua, numero, bairro, cidade, estado) VALUES (:nome, :datadenascimento , :email, :celular, :cep, :rua, :numero, :bairro, :cidade, :estado)");
    $idVisitante = $this->retornaProximaId();
-   $SQL->bindParam(':nome', $nome);
-   $SQL->bindParam(':datadenascimento', $datadenascimento);
+   $SQL->bindParam(':nome', $this->nome);
+   $SQL->bindParam(':datadenascimento', $this->datadenascimento);
    $SQL->bindParam(':email', $this->email);
    $SQL->bindParam(':celular', $this->celular);
    $SQL->bindParam(':cep', $this->cep);
