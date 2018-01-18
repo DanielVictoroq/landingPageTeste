@@ -1,7 +1,7 @@
 
 $(document).ready(()=>{
     document.querySelectorAll("input").forEach((target)=>{
-        target.value="";    
+        target.value="";
     });
 
     $('.date').mask('00/00/0000');
@@ -12,11 +12,11 @@ $(document).ready(()=>{
 
 
 function valida(campo){
-    
+
     let regex;
 
     switch(campo.getAttribute("id")){
-       
+
         case "nome":
             regex = /[^a-z\s]/gi;
             campo.value = campo.value.replace(regex, "");
@@ -40,12 +40,12 @@ function valida(campo){
             else if(campo.value.substr(0,1) > "31"){
                 campo.value = "";
             }
-            
+
         break;
     }
-    
+
     if(campo.getAttribute("id") == "nome"){
-        
+
     }
 
     else if(campo.getAttribute("id") == "email"){
@@ -68,7 +68,7 @@ jQuery(function($){
     correios.init( 'CY3chRdFLtglzCBQ1ukV6s3FVTy3Hxrk', '1oABJGRLtoDVOIATvKi4xnbAqdceqtfK5Bx4Z4X5CenKmviR' );
     $('#cep').correios( '#rua', '#bairro', '#cidade', '#estado', '' );
     setTimeout(() => {
-        
+
     }, 2000);
 });
 
@@ -98,13 +98,13 @@ cardBtn.addEventListener("click", (target) =>{
         btn.classList.add("btn-animation");
 
     }, 200);
-   
+
     console.log (formulario);
     cardBtn.classList.add("out");
     setTimeout(() => {
         cardBtn.textContent="Preencha seus dados!";
     }, 2000);
-   
+
 });
 
 function refazLayout(){
@@ -115,11 +115,8 @@ function refazLayout(){
         atendente.classList.add("posiciona-atendente");
     }, 500);
 
-    
+
 }
 
 
 console.log(cardBtn);
-
-
-

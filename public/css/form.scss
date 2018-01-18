@@ -3,7 +3,6 @@
     margin-top: $tamanho;
     color:black;
     font-weight: bold;
-
     @media(min-width:$tamanho){
         display: flex;
         opacity: 1;
@@ -12,28 +11,14 @@
         justify-content: space-between;
         flex-wrap: wrap;
         color:black;
-
     }
-    label{
-
-        font-weight: bold;
-        color: $textColor;
-
-        @media(min-width:$tamanho){
-            color:black;
-
-        }
-    }
-
     .nome{
         @include form-layout(100%);
         input{
             height: $itemheight;
             @extend %forminputs;
         }
-
     }
-
     .email{
         @include form-layout(100%);
         input{
@@ -46,24 +31,18 @@
             @extend %forminputs;
         }
     }
-
     .telefone{
         @include form-layout(45%);
         input{
             @extend %forminputs;
         }
-
-
     }
-
     .Cep{
         @include form-layout(45%);
         input{
             @extend %forminputs;
         }
-
     }
-
     .rua{
         @include form-layout(45%);
         margin-left: 10px;
@@ -71,36 +50,28 @@
             @extend %forminputs;
             opacity: .8;
         }
-
     }
-
     .numero{
         @include form-layout(20%);
         input{
             @extend %forminputs;
             width: 100%;
         }
-
     }
-
     .bairro{
         @include form-layout(45%);
         input{
             @extend %forminputs;
             opacity: .8;
         }
-
     }
-
     .cidade{
         @include form-layout(50%);
         input{
             @extend %forminputs;
             opacity: .8;
         }
-
     }
-
     .estado{
         @include form-layout(40%);
         input{
@@ -111,38 +82,3 @@
 
     }
 }
-
-
-.btn{
-
-     margin-top: $tamanho;
-     display: none;
-     background-color: #63acb5;
-     box-shadow: 0 0 5px;
-     color:$textColor;
-     font-weight: bold;
-     margin-bottom: 20px;
-     margin: auto;
-
-
-     @media(min-width:$tamanho){
-         display:block;
-         width: 80%;
-         margin: .5em auto;
-         border-radius: 7px;
-         opacity: .7;
-         background-color: #63acb5;
-         box-shadow: 0 0 5px #63acb5;
-         margin-bottom: 22px;
-
-     }
-
-     .btn-text{
-         font-weight: bold;
-     }
-
-    &:hover{
-        opacity:1;
-        color:white;
-    }
- }

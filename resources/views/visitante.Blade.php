@@ -12,7 +12,6 @@
  @endif
  <header class="mensagem">
         @if (session()->has('data'))
-
             <h2 class="success-msg">Cadastro Realizado com sucesso</h2>
             <script>
                 $(document).ready(()=>{
@@ -20,12 +19,9 @@
                 });
             </script>
         @endif
-
         <ul>
         @foreach($errors->all() as $error )
-
              <li>{{$error}}</li>
-
         @endforeach
         </ul>
 </header>
@@ -45,7 +41,7 @@
 <h3>Consultoria Tec</h3>
 </div>
 <section id="viewformulario" >
-<h1>Favor efetuar seu cadastro conforme campos abaixo:</h1>
+<h1>Efetue seu cadastro e faça uma parceria conosco</h1>
 <main class="main">
     <form class="form" action="create" method="post">
         <?=csrf_field()?>
@@ -88,6 +84,6 @@
         <button class="btn" type="submit"><span class="btn-text">ENVIAR</span></button>
 
     </form>
-  </main>;
+  </main>
 </section>
 </body>
