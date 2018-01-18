@@ -3,13 +3,6 @@
 
 @section('page')
 
- @if(!empty($errors->all()))
- <script>
-    $(document).ready(()=>{
-     esconde();
- });
- </script>
- @endif
  <header class="mensagem">
         @if (session()->has('data'))
             <h2 class="success-msg">Cadastro Realizado com sucesso</h2>
@@ -38,7 +31,7 @@
 <section id="viewformulario" >
 <h1>Efetue seu cadastro e faça uma parceria conosco</h1>
 <main class="main">
-    <form class="form" action="{{route('visitante')}}" method="post">
+    <form class="form" action="visitante" method="post">
         <?=csrf_field()?>
      <div class="formulario">
             <div class="form-item nome">

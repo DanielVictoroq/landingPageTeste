@@ -12,11 +12,6 @@ $(document).ready(()=>{
 
 });
 
-function maiuscula(z){
-        v = z.value.toUpperCase();
-        z.value = v;
-    }
-//FIM DA FUNÇÃO MASCARA MAIUSCULA
 
 function valida(campo){
     let regex;
