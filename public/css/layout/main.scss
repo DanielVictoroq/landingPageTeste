@@ -1,0 +1,77 @@
+.main{
+    
+    color: $textColor;
+    
+    @media(min-width: $tamanho){
+        position: absolute;
+        background-color:white;
+        width: 80%;
+        margin-left: 10%;
+        padding: 19px 0 40px 0;
+        color: black;
+    }
+}
+
+.card{
+    display:flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: $card-position;
+
+    @media(min-width:$tamanho){
+        width: 47%;
+        border-radius: 2em;
+        background-color: white;
+        box-shadow: 0 0 7px black;
+        z-index: 1;
+        margin: 0 0 0 0%;
+        left: 59%;
+    
+    
+    
+    }
+
+    .card-image{
+        width: 200px;
+        height: 200px;
+
+        @media(min-width:$tamanho){
+            width: 335px;
+            height: 200px;
+            margin:20px 0;
+        }
+    }
+
+    .card-title{
+        font-size: 1.3em;
+        font-weight: bold;
+
+        @media(min-width:$tamanho){
+            font-size: 1.2em;
+            text-align: center;
+            margin: -15px 0 0 0;
+        }
+
+    }
+
+    .card-btn{
+       
+        font-size: 1em;
+        
+        @media(min-width:$tamanho){
+           display:none;
+        }
+
+    }
+
+    .card-subtitle{
+        display: none;
+
+        @media(min-width:$tamanho){
+            display:block;
+        }
+    }
+    
+}

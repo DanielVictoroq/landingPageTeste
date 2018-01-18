@@ -12,69 +12,6 @@ border:none;
 /*section#view-formulario{
 }
 */
-body{
-  background: #F0FFFF;
-  background-size: cover;
-  overflow: hidden;
-}
-div.background{
-  position: absolute;
-  top: 500px;
-  left: 900px;
-  height: 100%;
-  width: 100%;
-  background-image: url('../imagem/imagem6.png');
-  background-repeat: no-repeat;
-}
-p.texto, p.texto-negri{
-  position: absolute;
-  left:150px;
-  top: 250px;
-  width: 600px;
-  height: 100%;
-  padding: 20px;
-  font: 20px  'Righteous';
-
-}
-p.texto-negri{
-  left:760px;
-  top: 450px;
-  overflow-x: hidden;
-}
-div.background2{
-  position: absolute;
-  top: 500px;
-  left: 300px;
-  height: 100%;
-  width: 100%;
-background-image: url('../imagem/fechado2.png');
-background-repeat: no-repeat;}
-div.rodape{
-  position: absolute;
-  top: 90%;
-  right: 45%;
-  height: 100%;
-  padding: 50px 20px;
-  font: 20px  'Righteous'
-}
-h2{
-position: absolute;;
-left: 40%;
-top: 0px;
-height: 20%;
-width: 100%;
-padding: 30px 60px;
-line-height: 300px;
-font: 30px  'Righteous';
-color: 	#000000;
-}
-h4{
-  position: absolute;
-  padding: 20px 60px;
-  top: 50px;
-  left: 39%;
-  font: 20px  'Playball';
-}
 section#viewformulario{
 position: absolute;
 right: 300px;

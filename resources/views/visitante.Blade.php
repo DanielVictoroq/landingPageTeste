@@ -1,18 +1,34 @@
 <!DOCTYPE html>
- <html>
+@extends('principal')
 
-      <head>
-          <meta charset="UTF-8">
-          <title>Cadastro Visitante</title>
-          <link rel="stylesheet" href="{{asset('css/stylesheet.css')}}">
-          <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Poiret+One|Righteous" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
-          <link rel="stylesheet" type="text/css" href="/css/form.scss">
-          <script src="/js/jquery.correios.min.js"></script>
-          <script src="/js/jquery.mask.js"></script>
-          <script src="/js/principal.js"></script>
-      </head>
+@section('page')
+
+ @if(!empty($errors->all()))
+ <script>
+    $(document).ready(()=>{
+     esconde();
+ });
+ </script>
+ @endif
+ <header class="mensagem">
+        @if (session()->has('data'))
+
+            <h2 class="success-msg">Cadastro Realizado com sucesso</h2>
+            <script>
+                $(document).ready(()=>{
+                    refazLayout();
+                });
+            </script>
+        @endif
+
+        <ul>
+        @foreach($errors->all() as $error )
+
+             <li>{{$error}}</li>
+
+        @endforeach
+        </ul>
+</header>
 <body>
 <h2>Consultoria Tec</h2>
 <h4>O seu sucesso é o nosso sucesso!!</h4>
@@ -30,6 +46,7 @@
 </div>
 <section id="viewformulario" >
 <h1>Favor efetuar seu cadastro conforme campos abaixo:</h1>
+<main class="main">
     <form class="form" action="create" method="post">
         <?=csrf_field()?>
      <div class="formulario">
@@ -71,6 +88,6 @@
         <button class="btn" type="submit"><span class="btn-text">ENVIAR</span></button>
 
     </form>
+  </main>;
 </section>
 </body>
-  </html>

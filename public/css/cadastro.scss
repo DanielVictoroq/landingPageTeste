@@ -1,0 +1,18 @@
+
+@import "utils/variables.scss"; 
+@import "utils/mixins.scss";
+@import "layout/atendente.scss";
+@import "layout/main.scss";
+@import "layout/form.scss";
+@import "layout/footer.scss";
+@import "utils/animations.scss";
+@import "layout/mensagem.scss";
+
+
+body{
+    background-color: $card-color;  
+    color:white;
+    @media(min-width:$tamanho) {
+        background-color: white;
+    }
+}
