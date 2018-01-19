@@ -15,12 +15,13 @@ class CreateVisitanteTable extends Migration
     {
         Schema::create('visitante', function (Blueprint $table) {
             $table->increments('id');
-			$table->string('nome', 255);
-			$table->date('datadenascimento' , 255);
-			$table->string('email' , 255);
+			      $table->string('nome', 255);
+			      $table->string('nascimento' , 255);
+			      $table->string('email' , 255);
             $table->string('celular',11);
-			$table->string('cep',8);
-		$table->string('rua' , 255);
+			      $table->string('cep',8);
+		        $table->string('rua' , 255);
+            $table->integer('numero' , 255);
             $table->string('bairro' , 255);
             $table->string('cidade' , 255);
             $table->string('estado', 255) ;

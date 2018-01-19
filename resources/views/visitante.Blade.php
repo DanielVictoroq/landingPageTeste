@@ -47,7 +47,7 @@
             </div>
             <div class="form-item telefone">
                 <input class="phone_with_ddd" type="text"
-                placeholder="Telefone ex:31912345678" name="telefone" id="telefone">
+                placeholder="Telefone ex:31912345678" name="celular" id="celular">
             </div>
             <div class="form-item Cep">
                 <input class="cep"  type="text"

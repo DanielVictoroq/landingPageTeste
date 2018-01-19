@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Http\VisitanteRequest;
+use App\Http\Requests\VisitanteRequest;
 use Illuminate\Support\Facades\Input;
 use  App\Visitantee;
 use Validator;
