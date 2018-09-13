@@ -11,6 +11,4 @@ class Visitantee extends Model
     protected $hidden = [
         '_token'
     ];
-
-  
 }
